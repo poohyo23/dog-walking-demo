@@ -1,0 +1,30 @@
+.container{
+    text-align: center;
+}
+
+.today_temp{
+    color: #FF9436;
+    border: 2px solid #FF9436;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.tomorrow_temp{
+    color: #7B7B7B;
+    border: 2px solid #7B7B7B;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.temp1 {
+    font-size: 35px;
+    color: #FF9436;
+    margin-top: 20px;
+}
+
+.temp2 {
+    font-size: 35px;
+    color: #7B7B7B;
+    margin-top: 20px;
+}

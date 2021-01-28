@@ -1,10 +1,10 @@
 import React from 'react'
 
-class Time extends React.Component{
+class WalkTimer extends React.Component{
     render() {
         return
         <div></div>
     }
 }
 
-export default Time
+export default WalkTimer
