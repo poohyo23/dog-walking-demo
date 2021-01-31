@@ -1,6 +1,7 @@
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import Wheather from './components/Wheather'
+import Diary from './components/Diary'
 import Menu from './components/Menu'
 
 class App extends React.Component{
