@@ -3,6 +3,7 @@ import { isMobile } from 'react-device-detect'
 import Wheather from './components/Wheather'
 import Diary from './components/Diary'
 import Menu from './components/Menu'
+import { Route, Switch } from 'react-router-dom'
 
 class App extends React.Component{
 
@@ -21,9 +22,20 @@ class App extends React.Component{
 
   render(){
     return <div>
-      {isMobile ? <div>{this.state.currentMenuIdx === 0 ? <Wheather />: <div>0이 아니다</div>}
-      <Menu changeMenu={this.changeMenu}  /></div> : <div>노 핸드폰</div>}
-
+      <Switch>
+        <Route path="/weather">
+          <Wheather />
+          <Menu changeMenu={this.changeMenu}></Menu>
+        </Route>
+        <Route path="/diary">
+          <Diary />
+          <Menu changeMenu={this.changeMenu}></Menu>
+        </Route>
+        <Route path="/">
+          <Wheather />
+          <Menu changeMenu={this.changeMenu}></Menu>
+        </Route>
+      </Switch>
     </div>
   }
 }

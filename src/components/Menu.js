@@ -8,9 +8,9 @@ class Menu extends React.Component{
   render(){
     return <nav>
     <ul>
-    <li onClick={() => this.props.changeMenu(0)}><FontAwesomeIcon icon={faCloudSun} style={{width: 55, height:55, color: '#aeaeae'}} /></li>    
-    <li onClick={() => this.props.changeMenu(1)}><FontAwesomeIcon icon={faHourglassHalf} style={{width: 55, height:55, color: '#aeaeae'}} /></li>
-    <li onClick={() => this.props.changeMenu(2)}><FontAwesomeIcon icon={faClipboard} style={{width: 55, height:55, color: '#aeaeae'}} /></li>        
+    <li><a href="weather"><FontAwesomeIcon icon={faCloudSun} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>    
+    <li><a href="walktimer"><FontAwesomeIcon icon={faHourglassHalf} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>
+    <li><a href="diary"><FontAwesomeIcon icon={faClipboard} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>        
     </ul>
 </nav>
   }

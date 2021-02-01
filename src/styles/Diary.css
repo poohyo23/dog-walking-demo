@@ -1,0 +1,45 @@
+
+#container{
+ margin: 0 auto;
+ width: 85%;
+ text-align: center;
+}
+
+.today{
+    margin-right: 5px;
+}
+input {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.date_delete{
+    border: 1px solid red;
+
+}
+
+.date_btn{
+    margin: 0 5px;
+    background-color: #FF9436;
+    border: 0;
+    color: white;
+    padding:5px;
+    border-radius: 5px;
+}
+
+#diary_list {
+    display: block; 
+    margin: 0px;  
+    padding: 0px;
+    
+}
+
+#diary_list > li {
+    display: flex;
+    border: 1px solid #FF9436;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+    padding: 10px 5px;
+    border-radius: 5px;        
+}

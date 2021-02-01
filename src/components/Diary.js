@@ -1,6 +1,9 @@
 import React from 'react'
+import '../styles/Diary.css'
 
-class Daiary extends React.Component{
+const todayDate = "2월 1일 "
+
+class Diary extends React.Component{
   
   // 생성자 함수 : 이 컴포넌트가 생성될 때 할 일을 정해주는 함수
   constructor(props){
@@ -26,14 +29,19 @@ class Daiary extends React.Component{
     })
   }
   
+  
   render(){
-    return<div>
-    <h1>할일 목록</h1>
-    <input type="text" onChange={e => this.setState({currentText: e.target.value })}/>
-    <button onClick={this.handleBtnClick}>추가</button>
-    <ul>
+    return <div id="container">
+    <h1>하루 한 줄 기록</h1>
+    <p style={{marginBottom:'40px'}}>오늘 산책은 어땠는지 하루 한 줄씩 기록해보세요</p>
+    
+    <span className="today">{todayDate}</span>
+    <input className="" type="text" maxlength="17" onChange={e => this.setState({currentText: e.target.value })} placeholder="오늘 산책 어땠어?"/>
+    <button className="date_btn" onClick={this.handleBtnClick}>저장</button> 
+    
+    <ul id="diary_list">          
       {this.state.toDos.map((toDo, index) => {
-        return <li key={index}>{toDo.todo}</li>
+        return <li key={index}>{todayDate}{toDo.todo}<span className="date_delete">X</span></li>
       })}
     </ul>
 
@@ -41,4 +49,4 @@ class Daiary extends React.Component{
   }
 }
 
-export default Daiary;
+export default Diary;

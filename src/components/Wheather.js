@@ -25,12 +25,12 @@ class Wheather extends React.Component{
 
   componentDidMount(){
     callApi().then(result => {this.setState({
-      today: result.data.list[0].main,
-      tomorrow : result.data.list[8].main,
-      todayMain : result.data.list[0].weather[0].main
+        today: result.data.list[0].main,
+        tomorrow : result.data.list[8].main,
+        todayMain : result.data.list[0].weather[0].main
+      })
+      console.log(result.data.list[0].weather[0].main)
     })
-    console.log(result.data.list[0].weather[0].main)
-  })
   }
   render(){
 
