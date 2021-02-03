@@ -6,7 +6,7 @@ import "../styles/Menu.css"
 
 class Menu extends React.Component{
   render(){
-    return <nav>
+    return <nav style={{background: 'white'}}>
     <ul>
     <li><a href="weather"><FontAwesomeIcon icon={faCloudSun} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>    
     <li><a href="walktimer"><FontAwesomeIcon icon={faHourglassHalf} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>

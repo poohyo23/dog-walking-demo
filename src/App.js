@@ -2,8 +2,10 @@ import React from 'react'
 import { isMobile } from 'react-device-detect'
 import Wheather from './components/Wheather'
 import Diary from './components/Diary'
+import WalkTimer from './components/WalkTimer'
 import Menu from './components/Menu'
 import { Route, Switch } from 'react-router-dom'
+
 
 class App extends React.Component{
 
@@ -29,6 +31,10 @@ class App extends React.Component{
         </Route>
         <Route path="/diary">
           <Diary />
+          <Menu changeMenu={this.changeMenu}></Menu>
+        </Route>
+        <Route path="/walktimer">
+          <WalkTimer />
           <Menu changeMenu={this.changeMenu}></Menu>
         </Route>
         <Route path="/">

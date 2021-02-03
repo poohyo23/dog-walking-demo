@@ -39,8 +39,8 @@ class Wheather extends React.Component{
     return <div className="container">
     
     <header>
-      <h1 style={{color:'#FF9436'}}>산책 전 날씨 체크!</h1>
-      <p>오늘도 댕댕이와 함께 즐거운시간~!</p>
+      <h1 style={{color:'#FF9436'}}>HAVE A GOOD DAY~!</h1>
+      <p>산책 전 오늘의 날씨 먼저 확인해보세요!</p>
     </header>
     
     <div>

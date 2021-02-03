@@ -18,6 +18,9 @@ class Diary extends React.Component{
 
   // ...this.state.toDos : 기존 투두스 요소들을 여기에 복사한다!
   handleBtnClick = () => {
+
+    if(this.state.toDos.length == 6) return;
+
     this.setState({
       toDos : [
         ...this.state.toDos,
