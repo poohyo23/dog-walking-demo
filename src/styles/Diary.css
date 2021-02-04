@@ -2,7 +2,7 @@
 #container{
  margin: 0 auto;
  width: 85%;
- text-align: center;
+ text-align: center; 
 }
 
 .today{
@@ -14,19 +14,19 @@ input {
 }
 
 .date_delete{
-    padding: 2px 5px;
+    padding: 3px 6px;
     background-color: #FF9436;
     color: white;
     border-radius: 5px;
 }
 
 .date_btn{
-    margin: 0 5px;
+    margin: 5px;
     background-color: #FF9436;
     border: 0;
     color: white;
-    padding:5px;
-    border-radius: 5px;
+    padding:7px;
+    border-radius: 5px;    
 }
 
 #diary_list {

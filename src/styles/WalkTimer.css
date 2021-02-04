@@ -4,11 +4,18 @@
     text-align: center;
 }
 .timer{
-    color:#FF9436
+    color:#FF9436    
 }
-.timer > h2 { font-size: 3em; margin: 25px 0px; }
+.timer > h2 { 
+    font-size: 3em; margin: 25px 0px; 
+   /* position: absolute;
+     left: 46%;
+    transform: translateX(-54%);
+    width: 46%; */
+}
 .timer > button{
     width: 70%;
+    height:50px;
     background-color: #FF9436;
     color: white;
     padding: 10px;
@@ -16,12 +23,13 @@
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;   
+    align-items: center;
     
 }
-/* .walk_end{    
-    display: none;
+.timer .walk_end{    
     background-color: teal;
-} */
+}
+
 
 .walk_list > ul{
     padding: 0px;
@@ -41,5 +49,7 @@
 .walk_after > ul > li {
     list-style: none;
     border-bottom: 1px solid rgb(177, 177, 177);    
-    padding: 10px 0px;                
+    padding: 10px 0px;    
+    width: 90%;           
+    margin: 0 auto;
 }

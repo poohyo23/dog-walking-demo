@@ -9,9 +9,7 @@ import axios from 'axios'
 
 const callApi = async () => await axios.get("http://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid=3418e4d33e1d68afaadbb4a700f37d38")
 
-//http://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid=3418e4d33e1d68afaadbb4a700f37d38
-
-//http://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid=3418e4d33e1d68afaadbb4a700f37d38
+//https://api.openweathermap.org/data/2.5/onecall?lat=37.5683&lon=126.9778&exclude=current,minutely,hourly&appid=18abf9c775b95cd53ed536d7b357d296
 class Wheather extends React.Component{
 
   constructor(props){
