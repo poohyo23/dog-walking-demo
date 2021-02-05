@@ -42,12 +42,12 @@ class Diary extends React.Component{
     <p style={{marginBottom:'40px'}}>오늘 산책은 어땠는지 하루 한 줄씩 기록해보세요</p>
     
     <span className="today">{`${this.todayDate.getMonth()+1}월 ${this.todayDate.getDate()}일`}</span>
-    <input className="" type="text" maxlength="23" onChange={e => this.setState({currentText: e.target.value })} placeholder="오늘 산책 어땠어?"/>
+    <input className="" type="text" maxLength="23" onChange={e => this.setState({currentText: e.target.value })} placeholder="오늘 산책 어땠어?"/>
     <button className="date_btn" onClick={this.handleBtnClick}>저장</button> 
     
     <ul id="diary_list">          
       {this.state.toDos.map((toDo, index) => {
-        return <li key={index}>{`${this.todayDate.getMonth()+1}월 ${this.todayDate.getDate()}일 : `}{toDo.todo}<span className="date_delete">X</span></li>
+        return <li key={index}>{`[ ${this.todayDate.getMonth()+1}월 ${this.todayDate.getDate()}일 ]  `}{toDo.todo}<span className="date_delete">X</span></li>
       })}
     </ul>
 

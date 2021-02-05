@@ -50,9 +50,9 @@ class WalkTimer extends React.Component{
             <div className="timer">
               <h2>{this.convertTimer(this.state.currentTime)}</h2>
               {this.state.isChecked ? 
-              <button className="walk_end" onClick={this.timeOnOff}>{this.state.isGoing ? "산책 끝!" : "산책 시작"}</button> :
+              <button className="walk_end" onClick={this.timeOnOff}>{this.state.isGoing ? "STOP" : "START"}</button> :
               <button className="walk_start" onClick={this.timeOnOff}>
-                {this.state.isGoing ? "STOP" : "산책 시작"}
+                {this.state.isGoing ? "STOP" : "START"}
                 </button>}
             </div>
 

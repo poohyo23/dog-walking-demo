@@ -26,10 +26,6 @@
     align-items: center;
     
 }
-.timer .walk_end{    
-    background-color: teal;
-}
-
 
 .walk_list > ul{
     padding: 0px;
