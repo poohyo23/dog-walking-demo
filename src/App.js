@@ -25,7 +25,7 @@ class App extends React.Component{
   render(){
     return <div>
       <Switch>
-        <Route path="/weather">
+        <Route exact path="/">
           <Wheather />
           <Menu changeMenu={this.changeMenu}></Menu>
         </Route>
@@ -35,10 +35,6 @@ class App extends React.Component{
         </Route>
         <Route path="/walktimer">
           <WalkTimer />
-          <Menu changeMenu={this.changeMenu}></Menu>
-        </Route>
-        <Route path="/">
-          <Wheather />
           <Menu changeMenu={this.changeMenu}></Menu>
         </Route>
       </Switch>
