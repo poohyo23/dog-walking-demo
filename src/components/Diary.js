@@ -31,10 +31,14 @@ class Diary extends React.Component{
       ], count : this.state.count + 1
     })
 
-
-    
   }
   
+
+  handleRemove = (id) => {
+    this.setState({
+      toDos : this.state.toDos.filter(toDo => toDo.id != id)
+    })
+  }
   
   render(){
     return <div id="container">
@@ -47,7 +51,8 @@ class Diary extends React.Component{
     
     <ul id="diary_list">          
       {this.state.toDos.map((toDo, index) => {
-        return <li key={index}>{`[ ${this.todayDate.getMonth()+1}월 ${this.todayDate.getDate()}일 ]  `}{toDo.todo}<span className="date_delete">X</span></li>
+        return <li key={index}>{`[ ${this.todayDate.getMonth()+1}월 ${this.todayDate.getDate()}일 ]  `}{toDo.todo}
+        <span className="date_delete" onClick={() => this.handleRemove(toDo.id)}>X</span></li>
       })}
     </ul>
 
