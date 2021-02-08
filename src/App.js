@@ -29,11 +29,11 @@ class App extends React.Component{
           <Wheather />
           <Menu changeMenu={this.changeMenu}></Menu>
         </Route>
-        <Route path="/diary">
+        <Route path="/#/diary">
           <Diary />
           <Menu changeMenu={this.changeMenu}></Menu>
         </Route>
-        <Route path="/walktimer">
+        <Route path="/#/walktimer">
           <WalkTimer />
           <Menu changeMenu={this.changeMenu}></Menu>
         </Route>
