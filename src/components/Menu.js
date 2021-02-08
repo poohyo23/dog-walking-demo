@@ -9,8 +9,8 @@ class Menu extends React.Component{
     return <nav style={{background: 'white'}}>
     <ul>
     <li><a href="/"><FontAwesomeIcon icon={faCloudSun} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>    
-    <li><a href="/dog-walking-demo/walktimer"><FontAwesomeIcon icon={faHourglassHalf} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>
-    <li><a href="/dog-walking-demo/diary"><FontAwesomeIcon icon={faClipboard} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>        
+    <li><a href="/dog-walking-demo/#/walktimer"><FontAwesomeIcon icon={faHourglassHalf} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>
+    <li><a href="/dog-walking-demo/#/diary"><FontAwesomeIcon icon={faClipboard} style={{width: 55, height:55, color: '#aeaeae'}} /></a></li>        
     </ul>
 </nav>
   }
